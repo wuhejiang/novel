@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.wuhejiang.utils.SlideMenu
+        android:id="@+id/slide_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include layout="@layout/layout_menu" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <include layout="@layout/layout_title_bar" />
+
+            <GridView
+                android:id="@+id/gv_xiaoshuo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:scrollbars="none" >
+            </GridView>
+
+        </LinearLayout>
+    </cn.wuhejiang.utils.SlideMenu>
+
+</RelativeLayout>
